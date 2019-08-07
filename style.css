@@ -39,12 +39,11 @@ footer {
 main {
   background-color: black;
   min-height: 70vh;
-  display: flex
+  display: flex;
 }
 
-
 .image-div {
-  align-self: flex-end
+  align-self: flex-end;
 }
 
 img {
@@ -76,7 +75,7 @@ img {
 }
 
 @media only screen and (min-width: 600px) {
-    .index-main {
+  .index-main {
     flex-direction: row-reverse;
   }
   .motivational-quote {
