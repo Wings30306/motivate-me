@@ -1,3 +1,8 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
 body {
   width: 100vw;
   overflow-x: hidden;
@@ -50,7 +55,7 @@ img {
 
 .motivational-quote {
   padding: 10%;
-  font-size: 2.5rem;
+  font-size: 3rem;
   text-align: center;
   color: whitesmoke;
   font-family: "Homemade Apple", cursive;
