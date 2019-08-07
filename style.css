@@ -1,69 +1,85 @@
+body {
+  width: 100vw;
+  overflow-x: hidden;
+}
 
-.row,
-.col-4,
-.col-8,
-.col-md-6 {
-    margin: auto 0;
-    padding: 0;
+.navbar-light,
+.footer-light,
+.bg-light {
+  background-color: lightblue !important;
+}
+
+.row {
+  margin: auto 0;
+  padding: 0;
 }
 
 .right {
-    text-align: right;
+  text-align: right;
 }
-
 
 .navbar-expand-md,
 .navbar-expand-lg,
 footer {
-    width: 100%;
-    height: 15vh;
-    font-size: 1.5rem;
-    font-family: 'Permanent Marker', cursive;
+  width: 100%;
+  min-height: 15vh;
+  font-size: 1.5rem;
+  font-family: "Permanent Marker", cursive;
 }
 
 .navbar-brand {
-    font-size: 2.5rem;
+  font-size: 2.5rem;
 }
 
 main {
-    background-color: black;
-    min-height: 70vh;
+  background-color: black;
+  min-height: 70vh;
+  display: flex
+}
+
+
+.image-div {
+  align-self: flex-end
 }
 
 img {
-    margin: 0 auto;
-    max-width: 100%;
-    max-height: 60vh;
+  margin: 5%;
+  max-width: 90%;
+  max-height: 90%;
 }
 
 .motivational-quote {
-    font-size: 3rem;
-    text-align: center;
-    color: whitesmoke;
-    font-family: 'Homemade Apple', cursive;
+  padding: 10%;
+  font-size: 5rem;
+  text-align: center;
+  color: whitesmoke;
+  font-family: "Homemade Apple", cursive;
+}
+
+.footer-icon {
+  font-size: 2em;
 }
 
 @media only screen and (min-width: 600px) {
-    .motivational-quote {
-      font-size: 6rem;
-    }
+    .index-main {
+    flex-direction: row-reverse;
   }
+}
 
-  @media only screen and (min-width: 900px) {
-    .motivational-quote {
-      font-size: 9rem;
-    }
+@media only screen and (min-width: 900px) {
+  .motivational-quote {
+    font-size: 6rem;
   }
-  
-  @media only screen and (min-width: 1200px) {
-    .motivational-quote {
-      font-size: 12rem;
-    }
+}
+
+@media only screen and (min-width: 1200px) {
+  .motivational-quote {
+    font-size: 8rem;
   }
+}
 
 @media only screen and (min-width: 1500px) {
-    .motivational-quote {
-      font-size: 15rem;
-    }
+  .motivational-quote {
+    font-size: 10rem;
   }
-
+}
