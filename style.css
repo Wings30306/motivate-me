@@ -3,10 +3,6 @@
   margin: 0;
 }
 
-body {
-  width: 100vw;
-  overflow-x: hidden;
-}
 
 .navbar-light,
 .footer-light,
@@ -52,9 +48,9 @@ img {
   max-height: 90%;
 }
 
-.motivational-quote {
+.quote-div {
   padding: 10%;
-  font-size: 3rem;
+  font-size: 1.5rem;
   text-align: center;
   color: whitesmoke;
   font-family: "Homemade Apple", cursive;
@@ -70,9 +66,11 @@ img {
   font-size: 1.5rem;
 }
 
-.about-div h2 {
+h2 {
   font-family: "Permanent Marker", cursive;
 }
+
+
 
 @media only screen and (min-width: 600px) {
   .index-main {
@@ -82,6 +80,9 @@ img {
     font-size: 4rem;
   }
 }
+
+/*
+
 
 @media only screen and (min-width: 900px) {
   .motivational-quote {
