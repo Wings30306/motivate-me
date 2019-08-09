@@ -1,13 +1,4 @@
-    const quotesData = 
-/*fetch("data/motivational-quotes.json")
-        .then(function(resp) {
-            return resp.json();
-        })
-        .then(function(data) {
-            console.log(data)
-            return(data)
-        })
-    */[
+    const quotesData = [
     {
         "quote": "Life isn’t about getting and having, it’s about giving and being.",
         "author": "Kevin Kruse"
@@ -418,18 +409,10 @@
     }
     ]
     
-
-
-function quoteTemplate(quote) {
-    return `
-    <div class="quote"></div>
-    <p class="motivational-quote">${quote.quote}</p>
-    <p class="author">${quote.author}</p>
-    <hr>
-    `
-}
-
 document.getElementById("quote").innerHTML = `
 <h2>Quote of the Day</h2>
-${quotesData.map(quoteTemplate).join("")}
+<p class="motivational-quote">
+${quotesData[Math.floor(Math.random() * quotesData.length)].quote}
+</p>
+<p class="author">${quotesData[Math.floor(Math.random() * quotesData.length)].author}</p>
 `
